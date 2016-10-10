@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.card-panel
+    h2 Express Chat
+    div.messages
+      div.systemMessage welcome to awesome chat
+    div.form.clearfix
+            textarea#msg(value='' placeholder='type message')
+            input#send(type='submit' value='Send')
